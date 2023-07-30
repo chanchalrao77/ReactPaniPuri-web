@@ -1,0 +1,82 @@
+/* navbar.css */
+
+/* Styles for the entire navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Styles for the opened state of the navbar */
+  .navbar.navopened {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Styles for the logo */
+  .logo {
+    /* Add any logo-specific styles here */
+    color:#ffffff;
+    margin-right: auto; /* Push the logo to the left */
+    
+  }
+  
+  /* Styles for the menu items */
+ .bar {
+    list-style: none;
+    display: flex; /* Display the menu items horizontally */
+    
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bar li {
+    margin-right: 15px;
+  }
+  
+  
+  
+  .bar a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    /* Add any link-specific styles here */
+  }
+  
+   
+  /* Styles for the button to toggle the menu on smaller screens */
+  .button {
+    /* display: none; Hide the button by default */
+    cursor: pointer;
+  }
+  
+  /* Styles for the "burger" icon in the button */
+  .burger {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+  }
+  
+  /* Styles for the "gotop" element with the "display" class */
+  .gotop.display {
+    display: block;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between; /* Align children with space between them */
+    align-items: center;
+    gap: 20px; /* Adjust the value as needed for the desired spacing */
+  }
+
+  .container {
+    max-width: 900px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add some padding to the container's left and right sides */
+  }
+  
